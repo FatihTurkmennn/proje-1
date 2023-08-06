@@ -1,0 +1,413 @@
+body {background-image: url(images/arkaplan.jpg); 
+    background-size:cover;
+   
+      width: 100%;
+      height: 100%;}
+  
+  body {
+    margin: 0;
+    padding: 0;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    
+    .navbar {
+      background-color:black;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+    
+    .navbar a:hover {
+      color: rgb(5, 51, 5);
+      
+    }
+    
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+    
+    .navbar li {
+      margin-right: 15px;
+    }
+
+    /*menü bitiş alt kısım baslangıç */
+
+.başlık1{text-align: center;}
+
+  .bilgi {background-color: white; /*yozgat bilgisi kısmı */
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 10px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    width:auto;
+    height:auto;
+    opacity:0.6;
+    filter:alpha(opacity=60);}
+
+
+.başlık2{text-align: center;} /*gezilecek yerlerin kısmı*/
+
+.gez{background-color: white;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 10px;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 25px;
+  width:auto;
+  height:auto;
+  opacity:0.6;
+  filter:alpha(opacity=60);}
+
+    .liste{display: flex;
+    justify-content: space-between;
+    margin-right: 400px;
+    margin-left: 350px;
+    padding: 15px;}
+
+  
+.kilise {background-color: white; /*kilise kısmı*/
+      color: black;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      border: 10px;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 25px;
+      width:auto;
+      height:auto;
+      opacity:0.6;
+      filter:alpha(opacity=60);}
+  
+  
+      .kilise::after {
+      content: "";
+      display: table;
+      clear: both;}
+        
+      .kilise p {
+      width: 60%; 
+      float: left;
+      text-align: left;}
+        
+      .kiliseimg img {
+      width: 35%;
+      float: right;
+      max-width: 100%;
+      height: auto;
+      border-radius: 25px;}
+
+.kerkenes {background-color: white; /*kerkenes kısmı*/
+      color: black;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      border: 10px;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 25px;
+      width:auto;
+      height:auto;
+      opacity:0.6;
+      filter:alpha(opacity=60);}
+      
+  .kerkenes::after {
+      content: "";
+      display: table;
+      clear: both;}
+            
+  .kerkenes p {
+      width: 60%; 
+      float: left;
+      text-align: left;}
+            
+  .kerkenes img {
+      width: 35%;
+      float: right;
+      max-width: 100%;
+      height: auto;
+      border-radius: 25px;}
+
+
+  .fatih {background-color: white; /*fatih camii bilgisi kısmı */
+      color: black;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      border: 10px;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 25px;
+      width:auto;
+      height:auto;
+      opacity:0.6;
+      filter:alpha(opacity=60);}
+
+
+
+  .fthcamiiimg { /*fatih camii foto kısmı*/
+    background-color: white;
+    border: 10px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    width:auto;
+    height:auto;
+    opacity:0.6;
+    filter:alpha(opacity=60);
+    display: flex;
+    justify-content: space-between;}
+            
+  .fthcamiiimg {
+      flex: 1;
+      margin: 5px;}
+  
+  .fthcamiiimg img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;}
+
+
+
+.karabıyık {background-color: white; /*karabıyık kısmı*/
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 10px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    width:auto;
+    height:auto;
+    opacity:0.6;
+    filter:alpha(opacity=60);}
+          
+          
+  .karabıyık::after {
+    content: "";
+    display: table;
+    clear: both;}
+                
+  .karabıyık p {
+    width: 60%; 
+    float: left;
+    text-align: left;}
+                
+  .krbykimg img {
+    width: 35%;
+    float: right;
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;}
+
+
+
+.yemekler{background-color: white;/*yemekler liste kısmı*/
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 10px;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 25px;
+  width:auto;
+  height:auto;
+  opacity:0.6;
+  filter:alpha(opacity=60);}
+      
+.yliste{display: flex;
+  justify-content: space-between;
+  margin-right: 400px;
+  margin-left: 400px;
+  padding: 15px;}
+
+  .bulama {background-color: white; /*bulama çorbası kısmı*/
+      color: black;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      border: 10px;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 25px;
+      width:auto;
+      height:auto;
+      opacity:0.6;
+      filter:alpha(opacity=60);}
+            
+            
+    .bulama::after {
+      content: "";
+      display: table;
+      clear: both;}
+                  
+    .bulama p {
+      width: 60%; 
+      float: left;
+      text-align: left;}
+                  
+    .blm img {
+      width: 35%;
+      float: right;
+      max-width: 100%;
+      height: auto;
+      border-radius: 25px;}
+
+
+      .arabaşı {background-color: white; /*arabaşı çorbası kısmı*/
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border: 10px;
+        margin: 15px;
+        padding: 15px;
+        border-radius: 25px;
+        width:auto;
+        height:auto;
+        opacity:0.6;
+        filter:alpha(opacity=60);}
+              
+              
+      .arabaşı::after {
+        content: "";
+        display: table;
+        clear: both;}
+                    
+      .arabaşı p {
+        width: 60%; 
+        float: left;
+        text-align: left;}
+                    
+      .arbş img {
+        width: 35%;
+        float: right;
+        max-width: 100%;
+        height: auto;
+        border-radius: 25px;}
+
+.madımak {background-color: white; /*madımak kısmı*/
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 10px;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 25px;
+  width:auto;
+  height:auto;
+  opacity:0.6;
+  filter:alpha(opacity=60);}
+                               
+  .madımak::after {
+    content: "";
+    display: table;
+    clear: both;}
+                      
+  .madımak p {
+    width: 60%; 
+    float: left;
+    text-align: left;}
+                      
+  .mdmk img {
+    width: 35%;
+    float: right;
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;}
+
+.desti {background-color: white; /*desti kısmı*/
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 10px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    width:auto;
+    height:auto;
+    opacity:0.6;
+    filter:alpha(opacity=60);}
+                                   
+  .desti::after {
+    content: "";
+    display: table;
+    clear: both;}
+                          
+  .desti p {
+    width: 60%; 
+    float: left;
+    text-align: left;}
+                          
+  .dst img {
+    width: 35%;
+    float: right;
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;}
+
+.bazlama {background-color: white; /*bazlama kısmı*/
+      color: black;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      border: 10px;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 25px;
+      width:auto;
+      height:auto;
+      opacity:0.6;
+      filter:alpha(opacity=60);}
+                                     
+.bazlama::after {
+      content: "";
+      display: table;
+      clear: both;}
+                            
+.bazlama p {
+      width: 60%; 
+      float: left;
+      text-align: left;}
+                            
+.bzlm img {
+      width: 35%;
+      float: right;
+      max-width: 100%;
+      height: auto;
+      border-radius: 25px;}
+
+.parmak {background-color: white; /*parmak çörek kısmı*/
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 10px;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 25px;
+  width:auto;
+  height:auto;
+  opacity:0.6;
+  filter:alpha(opacity=60);}
+                                       
+  .parmak::after {
+    content: "";
+    display: table;
+    clear: both;}
+                              
+  .parmak p {
+    width: 60%; 
+    float: left;
+    text-align: left;}
+                              
+  .prmk img {
+    width: 35%;
+    float: right;
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;}

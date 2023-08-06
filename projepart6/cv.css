@@ -1,0 +1,72 @@
+
+body{ background-image: url(images/arkaplan.jpg);
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Üst menü stil */
+  .navbar {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  .navbar a:hover {
+    color: rgb(5, 51, 5);;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin-right: 15px;
+  }
+  
+ /*menü altı */
+    
+ .anahat{background-color: white;
+font-family: 'Times New Roman', Times, serif;}
+
+.anahat {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.sol, .sağ {
+  flex: 1;
+  margin: 0 10px;
+  border: 2px solid black;
+}
+
+.sc1 , .sc2 , .sc3 {padding: 15px;
+  
+}
+
+.sc4 {padding: 15px;
+}
+
+h2{border-bottom:solid 1px black;}
+
