@@ -1,0 +1,118 @@
+body {background-image: url(images/arkaplan.jpg);
+    background-size:cover;
+   
+      width: 100%;
+      height: 100%;}
+  
+  body {
+    margin: 0;
+    padding: 0;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    
+    .navbar {
+      background-color:black;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+    
+    .navbar a:hover {
+      color: rgb(5, 51, 5);
+      
+    }
+    
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+    
+    .navbar li {
+      margin-right: 15px;
+    }
+  
+      /*menü altı */
+
+/* Formun genel konteynerinin temel stil ayarları */
+.iletisim {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 25px;
+  }
+  
+  /* Form başlığının stil ayarları */
+  .iletisim h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form etiketlerinin stil ayarları */
+  .form-group label {
+
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Form giriş alanlarının ve seçim kutularının stil ayarları */
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  
+  /* Radyo butonları ve onların etiketlerinin stil ayarları */
+  .form-check-label {
+    margin-left: 5px;
+  }
+  
+  /* Gönder ve Temizle düğmelerinin stil ayarları */
+  .btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: rgb(5, 51, 5);
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+  }
+  
+  /* Eksik alan mesajının stil ayarları */
+  p[ng-show="showMissingFieldsMessage"] {
+    color: red;
+    margin-top: 10px;
+  }
+  

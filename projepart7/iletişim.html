@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FATİH TÜRKMEN</title>
+  <link rel="stylesheet" href="iletişim.css">
+</head>
+<body>
+    <!-- üst menü-->
+  <div class="container">
+    <div class="navbar">
+      <div class="isim">
+        <a href="#">FATİH TÜRKMEN</a>
+      </div>
+      <ul>
+        <li><a href="ana_sayfa.html">ANA SAYFA</a></li>
+        <li><a href="ilgi_alanlarım.html">İLGİ ALANLARIM</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="benim_şehrim.html">BENİM ŞEHRİM</a></li>
+        <li><a href="çamlık.html">ÇAMLIK</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="iletişim.html">İLETİŞİM</a></li>
+      </ul>
+    </div>         
+  </div>
+    <!--alt kısım-->
+    
+    <!-- Add AngularJS library -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+<div ng-app="myApp" ng-controller="FormController">
+  <div class="iletisim">
+    <h1>İletişim Formu</h1>
+    <form action="iletisim.php" method="post" id="iletisimForm" name="iletisimForm" ng-submit="submitForm()" novalidate>
+      <div class="form-group">
+        <label for="name">Adınız Soyadınız:</label>
+        <input type="text" class="form-control" name="name" id="name" ng-model="formData.name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-posta Adresiniz:</label>
+        <input type="email" class="form-control" id="email" name="email" ng-model="formData.email" required>
+      </div>
+      <div class="form-group">
+        <label>Cinsiyet:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="cinsiyet" id="kadin" value="kadin" ng-model="formData.cinsiyet" required>
+          <label class="form-check-label" for="kadin">Kadın</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="cinsiyet" id="erkek" value="erkek" ng-model="formData.cinsiyet" required>
+          <label class="form-check-label" for="erkek">Erkek</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>İlgi Alanlarınız:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="ilgi_alani[]" id="spor" value="spor" ng-model="formData.ilgi_alani.spor">
+          <label class="form-check-label" for="spor">Spor</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="ilgi_alani[]" id="muzik" value="muzik" ng-model="formData.ilgi_alani.muzik">
+          <label class="form-check-label" for="muzik">Müzik</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="ilgi_alani[]" id="sanat" value="sanat" ng-model="formData.ilgi_alani.sanat">
+          <label class="form-check-label" for="sanat">Sanat</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="sehir">Şehriniz:</label>
+        <select class="form-control" name="sehir" id="sehir" ng-model="formData.sehir" required>
+          <option value="">-- Şehir Seçin --</option>
+          <!-- Add your city options here -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Mesajınız:</label>
+        <textarea class="form-control" id="message" name="message" rows="5" ng-model="formData.message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" name="gönder" ng-disabled="showMissingFieldsMessage || iletisimForm.$invalid">Gönder</button>
+      <button type="button" class="btn btn-secondary" ng-click="clearForm()">Temizle</button>
+
+      <p ng-show="showMissingFieldsMessage" style="color: red;">Doldurmak zorunludur.</p>
+    </form>
+  </div>
+</div>
+
+<script>
+  var app = angular.module('myApp', []);
+
+  app.controller('FormController', function ($scope) {
+    // Form verilerini içeren bir nesne tanımlıyoruz
+    $scope.formData = {};
+    
+    // Eksik alan mesajını göstermek için bir değişken tanımlıyoruz
+    $scope.showMissingFieldsMessage = false;
+
+    // Formu gönderme işlevi
+    $scope.submitForm = function () {
+      // Eğer form geçerliyse (tüm alanlar doldurulmuşsa)
+      if ($scope.iletisimForm.$valid) {
+        // Form verilerini işleme (örneğin sunucuya gönderme)
+        console.log($scope.formData);
+        // Burada form verilerini sunucuya göndermek için gerekli AJAX veya HTTP isteğini yapabilirsiniz.
+      } else {
+        // Eksik alanlar varsa, mesajı göstermek için değişkeni true yapıyoruz
+        $scope.showMissingFieldsMessage = true;
+      }
+    };
+
+    // Formu temizleme işlevi
+    $scope.clearForm = function () {
+      // Form verilerini ve durumunu sıfırlıyoruz
+      $scope.formData = {};
+      $scope.iletisimForm.$setPristine();
+      $scope.iletisimForm.$setUntouched();
+      
+      // Eksik alan mesajını gizlemek için değişkeni false yapıyoruz
+      $scope.showMissingFieldsMessage = false;
+    };
+  });
+</script>
+
+<script>
+    // JavaScript ile Türkiye şehirleri combobox'a eklemek
+    var sehirler = ["Adana", "Adıyaman", "Afyonkarahisar", "Ağrı", "Amasya", "Ankara", "Antalya", "Artvin", "Aydın", "Balıkesir", "Bilecik", "Bingöl", "Bitlis", "Bolu", "Burdur", "Bursa", "Çanakkale", "Çankırı", "Çorum", "Denizli", "Diyarbakır", "Edirne", "Elazığ", "Erzincan", "Erzurum", "Eskişehir", "Gaziantep", "Giresun", "Gümüşhane", "Hakkari", "Hatay", "Isparta", "Mersin", "İstanbul", "İzmir", "Kars", "Kastamonu", "Kayseri", "Kırklareli", "Kırşehir", "Kocaeli", "Konya", "Kütahya", "Malatya", "Manisa", "Kahramanmaraş", "Mardin", "Muğla", "Muş", "Nevşehir", "Niğde", "Ordu", "Rize", "Sakarya", "Samsun", "Siirt", "Sinop", "Sivas", "Tekirdağ", "Tokat", "Trabzon", "Tunceli", "Şanlıurfa", "Uşak", "Van", "Yozgat", "Zonguldak", "Aksaray", "Bayburt", "Karaman", "Kırıkkale", "Batman", "Şırnak", "Bartın", "Ardahan", "Iğdır", "Yalova", "Karabük", "Kilis", "Osmaniye", "Düzce"];
+  
+    var select = document.getElementById("sehir");
+    for (var i = 0; i < sehirler.length; i++) {
+        var option = document.createElement("option");
+        option.text = sehirler[i];
+        option.value = sehirler[i];
+        select.appendChild(option);
+    }
+  
+  </script>
+  
+  <!--JavaScript ile form eleman temizleme-->
+  <script>
+    
+  
+    function clearForm() {
+      document.getElementById("iletisimForm").reset();
+    }
+  </script>
+  
+
+
+
+
+</body>
+</html>
